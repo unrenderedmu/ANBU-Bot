@@ -4,7 +4,6 @@ import asyncio
 import discord
 from discord.ext import commands
 import config
-#from still_alive import still_alive
 intents = discord.Intents.default()
 intents.members = True
 
@@ -267,5 +266,4 @@ async def edit_reason(msg):
     fnd_em.set_field_at(2, name = "Reason", value = new_reason, inline = False)
     await fnd_msg.edit(embed = fnd_em)
 
-#still_alive()
 bot.run(_token)
